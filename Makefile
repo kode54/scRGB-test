@@ -1,6 +1,6 @@
 CC      ?= cc
 CFLAGS  ?= -O2 -g -Wall -Wextra
-PKGS    := wayland-client cairo
+PKGS    := wayland-client cairo vulkan
 CFLAGS  += $(shell pkg-config --cflags $(PKGS)) -Igen
 LDLIBS  += $(shell pkg-config --libs $(PKGS)) -lm
 
